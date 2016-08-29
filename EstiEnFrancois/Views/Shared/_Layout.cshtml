@@ -1,0 +1,30 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+
+<html>
+<head>
+    @*<title>@ViewBag.Title</title>*@
+
+    <meta charset="UTF-8">
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Esti Badenhorst, Francois van der Merwe, Troue, 1 Oktober 2016">
+    <meta name="robots" content="index">
+    <meta name="description" content="Trou webblad vir Esti en Francois">
+    <meta name="author" content="Francois van der Merwe">*@
+
+    @*<link rel="shortcut icon" href="~/Content/Images/favicon.ico" />
+
+    <link href="~/Content/Styles/fonts.css" rel="stylesheet" media="screen">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/vendor")
+    @Scripts.Render("~/bundles/site")*@
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body class="loading">
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
