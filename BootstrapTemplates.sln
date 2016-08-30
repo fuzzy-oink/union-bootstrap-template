@@ -1,7 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionTemplate", "UnionTemplate\UnionTemplate.csproj", "{9E2A6AAF-5ED5-400B-B46B-423938FE503E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Union", "Union\", "{79042BDF-A96D-4226-8C78-61EFE491DC6B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1502"
+		Debug.AspNetCompiler.PhysicalPath = "Union\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1502\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1502"
+		Release.AspNetCompiler.PhysicalPath = "Union\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1502\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1502"
+		SlnRelativePath = "Union\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{B5C71C87-C1D8-4284-837A-547F4911A75A}"
+	ProjectSection(SolutionItems) = preProject
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,14 +39,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4799C7BB-2715-4442-878C-4D598F074E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4799C7BB-2715-4442-878C-4D598F074E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4799C7BB-2715-4442-878C-4D598F074E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4799C7BB-2715-4442-878C-4D598F074E04}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E2A6AAF-5ED5-400B-B46B-423938FE503E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E2A6AAF-5ED5-400B-B46B-423938FE503E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E2A6AAF-5ED5-400B-B46B-423938FE503E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E2A6AAF-5ED5-400B-B46B-423938FE503E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79042BDF-A96D-4226-8C78-61EFE491DC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79042BDF-A96D-4226-8C78-61EFE491DC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79042BDF-A96D-4226-8C78-61EFE491DC6B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{79042BDF-A96D-4226-8C78-61EFE491DC6B}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
