@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstiEnFrancois", "EstiEnFrancois\EstiEnFrancois.csproj", "{9E2A6AAF-5ED5-400B-B46B-423938FE503E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionTemplate", "UnionTemplate\UnionTemplate.csproj", "{9E2A6AAF-5ED5-400B-B46B-423938FE503E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
