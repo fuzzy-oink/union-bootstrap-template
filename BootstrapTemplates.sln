@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Union", "Union\", "{79042BDF-A96D-4226-8C78-61EFE491DC6B}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UnionTemplate", "UnionTemplate\", "{79042BDF-A96D-4226-8C78-61EFE491DC6B}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_1502"
-		Debug.AspNetCompiler.PhysicalPath = "Union\"
+		Debug.AspNetCompiler.PhysicalPath = "UnionTemplate\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1502\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_1502"
-		Release.AspNetCompiler.PhysicalPath = "Union\"
+		Release.AspNetCompiler.PhysicalPath = "UnionTemplate\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1502\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "1502"
-		SlnRelativePath = "Union\"
+		SlnRelativePath = "UnionTemplate\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
