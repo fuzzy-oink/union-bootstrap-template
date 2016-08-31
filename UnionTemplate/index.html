@@ -4,13 +4,17 @@
     <meta charset="utf-8" />
     <title>Union wedding template</title>
     
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    
     <link rel="stylesheet" href="vendor/css/bootstrap.css" />
     <link rel="stylesheet" href="vendor/css/font-awesome.css" />
     <link rel="stylesheet" href="vendor/css/TimeCircles.css" />
     <link rel="stylesheet" href="vendor/css/animate.css" />
 
-    <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/infinity-loader.css" />
+
+    <link rel="stylesheet" href="css/red.theme.css" id="currentTheme"/>
     
     <script type="text/javascript" src="vendor/js/jquery-3.1.0.js"></script>
     <script type="text/javascript" src="vendor/js/bootstrap.js"></script>
@@ -21,8 +25,8 @@
 <body>
     <div id="preloader">
         <div id="preloaderContainer">
-            <div id="infinity"></div>
-            <div class="loading-text">Ons kry gou alles vir jou reg.<br />Dit sal die moeite werd wees, belowe!</div>
+            <div class="infinity-loader"></div>
+            <div class="loading-text">We're getting everything ready for you.<br />It'll be worth the wait, we promise!</div>
         </div>
     </div>
 
@@ -36,15 +40,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#home">Esti & Francois</a>
+                    <a class="navbar-brand" href="#home">Kayleigh & Christopher</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="custom-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home">Tuis</a></li>
-                        <li><a href="#ons">Oor Ons</a></li>
-                        <li><a href="#troue">Ons Troue</a></li>
-                        <li><a href="#kontak">Kontak Ons</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#couple">About us</a></li>
+                        <li><a href="#wedding">Our wedding</a></li>
+                        <li><a href="#contact">Contact us</a></li>
                         <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rsvpModal">RSVP</button></li>
                     </ul>
                 </div>
@@ -54,34 +58,34 @@
 
     <section id="home" class="pfblock-image screen-halfheight">
         <div class="overlay">
-            <h1>Esti en Francois</h1>
-            <div class="start">trou oor</div>
+            <h1>Kayleigh and Christopher</h1>
+            <div class="start">are getting married in</div>
 
-            <div id="DateCountdown" data-date="2016-10-01 16:00:00"></div>
+            <div id="DateCountdown"></div>
 
             <div class="start" style="margin-bottom: 15px;">
                 <p>
-                    Ons kan nie wag nie!
+                    We can't wait!
                     <br />
-                    Kom vier hierdie wonderlike geleentheid saam met ons op die <b>1ste Oktober 2016</b>.
+                    Come celebrate this <b>momentous</b> occasion with us on the <b>1st of June 2017</b>
                     <br />
-                    Ons is <b>hengse</b> opgewonde! Hoop julle is ook!
+                    We are <b>very</b> excited! We hope you are too!
                     <br />
-                    Hier kan julle bietjie meer uitvind oor ons, asook ons troue se besonderhede.
+                    Here you can find out a bit more about us and our wedding.
                 </p>
-                <button type="button" class="btn btn-primary btn-rsvp" data-toggle="modal" data-target="#rsvpModal">Ek wil bywoon!</button>
+                <button type="button" class="btn btn-primary btn-rsvp" data-toggle="modal" data-target="#rsvpModal">I want to attend!</button>
             </div>
         </div>
     </section>
 
-    <section id="ons" class="pfblock pfblock-gray" style="display: none;">
+    <section id="couple" class="pfblock pfblock-gray" style="display: none;">
         <div class="heart-texture background-container">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
                         <div class="pfblock-header animated fadeInUp">
-                            <h2 class="pfblock-title">Bietjie meer oor ons</h2>
-                            <p>Ons neem ons self nie te ernstig op nie. Hier's 'n paar redes hoekom julle ook nie hoef nie!</p>
+                            <h2 class="pfblock-title">Who we are</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget varius lorem, vel varius leo. Pellentesque at sem ullamcorper, ullamcorper mi sed, dignissim sapien.</p>
                             <div class="pfblock-line"></div>
                         </div>
                     </div>
@@ -91,10 +95,10 @@
                     <div class="col-sm-5">
                         <div class="iconbox animation-delay-1 animated slideInLeft">
                             <div class="iconbox-text">
-                                <h3 class="iconbox-title">Esti</h3>
+                                <h3 class="iconbox-title">Kayleigh</h3>
                                 <div class="iconbox-desc">
-                                    <img src="./img/Esti_s.jpg" alt="Esti" />
-                                    <p>Esti is 'n onderwyseres met 'n liefde vir kinders van alle ouderdomme, solank hulle luister vir haar en oor die algemeen soet is. Sy geniet Afrikaanse films, Afrikaanse musiek en enigiets Afrikaans vir daai geval. Haar stokperdjies sluit in bak, Francois terg en vakansie hou.</p>
+                                    <img src="./img/bride.png" alt="Kayleigh" />
+                                    <p>Praesent vel nibh sed est consequat ultrices nec vel orci. Etiam volutpat mauris vitae porta elementum. Nulla quis lectus sed turpis aliquam interdum sed quis eros. Morbi leo metus, ullamcorper non erat ac, eleifend sagittis ante. Nulla scelerisque, mauris a convallis molestie, odio tellus malesuada diam, non gravida libero leo at sem. Vivamus at aliquam urna, et placerat erat. Sed at nibh dapibus, posuere nisl vel, rutrum risus. Donec id orci ut nibh commodo auctor ac quis tellus. Sed dictum mi vel enim maximus dapibus. Morbi gravida at metus a pharetra. In sodales arcu sed semper euismod. Aliquam in pretium lectus, ut laoreet neque. Nunc consectetur consectetur orci id sagittis. Morbi at fringilla orci.</p>
                                 </div>
                             </div>
                         </div>
@@ -107,10 +111,10 @@
                     <div class="col-sm-5">
                         <div class="iconbox animated animation-delay-1 slideInRight">
                             <div class="iconbox-text">
-                                <h3 class="iconbox-title">Francois</h3>
+                                <h3 class="iconbox-title">Christopher</h3>
                                 <div class="iconbox-desc">
-                                    <img src="./img/Francois_s.jpg" alt="Francois" />
-                                    <p>Francois is tans 'n sagteware ingenieur by 'n bekende sagteware konsultasie firma. Hy geniet rekenaars (heeltemal te veel), kyk wat ook al Esti wil kyk en kan soms hardkoppig wees. Sy stokperdjies sluit in tegnologiese dinge en Esti op sy hande te dra.</p>
+                                    <img src="./img/groom.png" alt="Christopher" />
+                                    <p>Ut semper euismod orci quis dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis in sem purus. Vestibulum at nibh sit amet est sagittis tempor et ac ex. Pellentesque odio felis, euismod sed porttitor nec, convallis fermentum felis. Cras elementum metus sit amet orci porta, quis vulputate massa vestibulum. Aliquam malesuada tempor diam vel bibendum. Fusce condimentum metus neque, eu sagittis nisl dictum ut. Nulla pretium non ex id consequat. Sed et auctor velit. Ut ac arcu ipsum. Phasellus purus felis, sodales non pulvinar non, laoreet sit amet sem. Pellentesque ac lectus erat. Phasellus ac dolor finibus, ultricies est eu, ornare metus.</p>
                                 </div>
                             </div>
                         </div>
@@ -120,12 +124,12 @@
                     <div class="col-sm-12">
                         <div class="iconbox fadeInUp">
                             <div class="iconbox-text">
-                                <h3 class="iconbox-title">Hoe ons ontmoet het</h3>
+                                <h3 class="iconbox-title">How we met</h3>
                                 <div class="iconbox-desc">
-                                    Francois en Esti het ontmoet by 'n gemeenskaplike vriendin se 21ste verjaarsdag. Hulle het dadelik 'n konneksie gemaak en het 'n maand later begin amptelik uitgaan, tenspyte van 'n gebreekte tand en noue ontkoming met skoonpa op die eerste kuier. Hulle het uitgegaan vir 2 en 'n half jaar voor Francois (uiteindelik, volgens Esti) Esti gevra het on sy bruid te wees. Hulle troue is beplan vir die 1ste Oktober 2016.
+                                    Nunc elementum libero in leo aliquet, in laoreet lacus finibus. Nunc molestie placerat neque nec malesuada. Curabitur sed ligula ornare ligula molestie laoreet. Phasellus tempus tortor ut leo convallis aliquam. Curabitur auctor, mauris id euismod lacinia, velit tellus condimentum tortor, ut mollis justo sapien ut orci. Morbi lobortis ac sem consequat imperdiet. Nunc tempus suscipit augue, vitae placerat ante dignissim in. Fusce sit amet malesuada metus. Pellentesque imperdiet ex id augue varius scelerisque. Morbi venenatis auctor ultricies. Maecenas porttitor turpis at enim faucibus tempus. Vestibulum aliquet risus venenatis dui rutrum aliquet. Aenean non dignissim tortor, at ultricies justo. Suspendisse ut nisi hendrerit turpis tristique gravida. Fusce a nunc tristique, viverra augue vitae, condimentum ipsum.
                                 </div>
                                 <br />
-                                <button type="button" class="btn btn-primary btn-rsvp" data-toggle="modal" data-target="#rsvpModal">Ek wil bywoon!</button>
+                                <button type="button" class="btn btn-primary btn-rsvp" data-toggle="modal" data-target="#rsvpModal"></button>
                             </div>
                         </div>
                     </div>
@@ -135,7 +139,7 @@
                         <div class="iconbox fadeInUp">
                             <!--<div id="ons-slideshow" class="carousel slide " data-ride="carousel">
                                 <ol class="carousel-indicators">
-                                    <li data-target="#ons-slideshow" data-slide-to="0" class="active"></li>
+                                    <li data-target="#couple-slideshow" data-slide-to="0" class="active"></li>
                                     
                                 </ol>
 
@@ -159,13 +163,13 @@
         </div>
     </section>
 
-    <section id="troue" class="pfblock-image" style="display: none;">
+    <section id="wedding" class="pfblock-image" style="display: none;">
         <div class="overlay">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
                         <div class="pfblock-header wow fadeInUp">
-                            <h2 class="pfblock-title">Meer besonderhede oor ons troue</h2>
+                            <h2 class="pfblock-title">More details about our wedding</h2>
                             <div class="pfblock-line"></div>
                         </div>
                     </div>
@@ -176,19 +180,16 @@
                             <div class="iconbox-text">
                                 <h3 class="iconbox-title">Venue</h3>
                                 <div class="iconbox-desc">
-                                    Ons gaan die knoop deurhaak by die <a class="no-smooth-scroll" href="http://www.makiti.co.za/">Makiti Wedding Venue</a>, 'n 50 hektaar landgoed geleë in die beeldskone Kromdraai vallei naby Krugersdorp, wat ook deel vorm van die Sterkfontein wêreld erfenis gebied. Van Makiti se drie pragtige lokale het ons die intieme <a href="http://www.makiti.co.za/index.php/2015-09-23-11-43-17/function-venues/ennyani-venue">Ennyani lokaal</a> gekies om ons huwelik by te bevestig.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie, turpis vitae imperdiet imperdiet, nisi tortor varius turpis, eget pulvinar turpis lacus vitae massa. Vivamus viverra augue in finibus tempor. Proin eros lectus, dapibus nec magna posuere, placerat dignissim massa. Aenean non leo lacus. Duis lobortis purus sed enim interdum efficitur. In sit amet augue sem. Nam auctor risus vitae ligula vehicula, a sollicitudin sem vehicula. Mauris vel pulvinar arcu.
+                                    <br/>
+                                    In tincidunt malesuada neque, vitae accumsan nisi aliquam vitae. Praesent eget risus eget justo molestie volutpat eu ac urna. Donec sodales eget massa sed aliquet. Cras ac euismod dui, eu interdum justo. Sed consectetur porttitor neque imperdiet suscipit. Ut tempus ex sagittis, consequat eros eget, blandit risus. Vivamus malesuada ex et ullamcorper feugiat. Pellentesque vel ultricies lorem. Nunc ut accumsan sem. Quisque molestie volutpat suscipit. Donec facilisis orci sed aliquet accumsan. Praesent vel tortor tortor. Nunc suscipit mi ut lectus maximus, nec auctor risus congue.
                                     <br /><br />
-                                    As julle dalk oornag verblyf benodig kan julle gerus <a class="no-smooth-scroll" href="http://www.makiti.co.za/index.php/accomodation">Makiti</a> kontak of een van die volgende plekkies oorweeg:
                                     <ul class="list-unstyled">
-                                        <li><a href="http://bankenveldhouse.co.za/">Bankenveld House</a></li>
-                                        <li><a href="http://www.engedi.co.za/">Engedi</a></li>
-                                        <li><a href="http://www.welpieguesthouse.co.za/index.html">Welpie Guesthouse</a></li>
-                                        <li><a href="http://www.cradleaccommodation.co.za/index.html">Villa Savanna</a></li>
-                                        <li><a href="http://www.no8guesthouse.co.za/index.html">No 8 Guest house</a></li>
-                                        <li><a href="http://sterkfonteinlodge.co.za/">Sterkfontein Heritage Lodge</a></li>
-                                        <li><a href="http://devillarosa.co.za/">De Villa Rosa</a></li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        <li>Duis ac libero porta, elementum tortor quis, finibus est.</li>
+                                        <li>Duis eget massa aliquet, mollis mi eget, pulvinar nibh.</li>
+                                        <li>In malesuada erat vitae libero vehicula faucibus.</li>
                                     </ul>
-                                    Daar's ook 'n klomp plekke in die naby geleë Krugersdorp
                                 </div>
                             </div>
                         </div>
@@ -197,10 +198,10 @@
                     <div class="col-sm-7">
                         <div class="iconbox wow slideInRight">
                             <div class="iconbox-text">
-                                <h3 class="iconbox-title">Kaart</h3>
+                                <h3 class="iconbox-title">Map</h3>
                                 <div class="iconbox-desc embed-responsive embed-responsive-4by3">
                                     <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
-                                    <iframe width="600" height="450" style="border: 0" src="https://www.google.com/maps/embed/v1/place?q=Makiti%20Wedding%20Venue%2C%20Krugersdorp%2C%20South%20Africa&key=AIzaSyANWHG9o6W9OXLfVYrfhEC_jOKCPJVKNYQ" allowfullscreen></iframe>
+                                    <iframe width="600" height="450" style="border: 0" src="https://www.google.com/maps/embed/v1/place?q=Trou+Aux+Biches+Resort+%26+Spa&key=AIzaSyANWHG9o6W9OXLfVYrfhEC_jOKCPJVKNYQ" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -228,17 +229,18 @@
         </div>
     </div>
 
-    <footer id="kontak" style="display: none;">
+    <footer id="contact" style="display: none;">
         <h3>Kontak ons</h3>
         <div class="social-links-inline">
-            <a href="mailto:rsvp@esti-en-francois.co.za" class="fadeInUp"><i class="fa fa-envelope no-smooth-scroll"></i></a>
-            <a href="https://www.facebook.com/groups/EstiEnFrancois" class="fadeInUp"><i class="fa fa-facebook no-smooth-scroll"></i></a>
+            <a href="mailto:your_email_address_here" class="fadeInUp"><i class="fa fa-envelope no-smooth-scroll"></i></a>
+            <a href="#" class="fadeInUp" target="_blank"><i class="fa fa-facebook no-smooth-scroll"></i></a>
+            <a href="#" class="fadeInUp" target="_blank"><i class="fa fa-twitter no-smooth-scroll"></i></a>
             <button type="button" class="" data-toggle="modal" data-target="#rsvpModal">RSVP</button>
         </div>
 
         <p class="heart">
-            Met&nbsp;<span class="fa fa-heart animated pulse"></span>&nbsp;gemaak deur Francois en Esti<br />
-            © 2015 Esti en Francois | Prente: <a class="no-smooth-scroll" href="http://www.alexholderphotography.com/">Alex Holder Photography</a>, <a class="no-smooth-scroll" href="https://unsplash.com/">Unsplash</a> & <a class="no-smooth-scroll" href="http://zoomwalls.com/">Zoomwalls</a>
+            Made with&nbsp;<span class="fa fa-heart animated pulse"></span>&nbsp;by Fuzzy Designs<br />
+            © 2016 | Images: <a class="no-smooth-scroll" href="https://unsplash.com/">Unsplash</a> & <a class="no-smooth-scroll" href="http://zoomwalls.com/">Zoomwalls</a>
         </p>
     </footer>
 </body>

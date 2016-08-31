@@ -6,12 +6,12 @@ var plumber = require("gulp-plumber");
 var zip = require("gulp-zip");
 
 gulp.task("less", function () {
-    return gulp.src("./Union/css/less/*.less")
+    return gulp.src("./UnionTemplate/css/less/*.less")
     .pipe(plumber())
       .pipe(less({
           paths: [path.join(__dirname, "less", "includes")]
       }))
-      .pipe(gulp.dest("./Union/css/"));
+      .pipe(gulp.dest("./UnionTemplate/css/"));
 });
 
 gulp.task("zip", function () {

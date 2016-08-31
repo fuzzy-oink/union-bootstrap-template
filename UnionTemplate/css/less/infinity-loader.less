@@ -1,0 +1,57 @@
+﻿@keyframes roto {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.infinity-loader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 10px;
+    right: 0;
+    margin: auto;
+    width: 93px;
+    height: 40px;
+    -webkit-animation: roto 1s infinite ease-in-out;
+    -moz-animation: roto 1s infinite ease-in-out;
+    -ms-animation: roto 1s infinite ease-in-out;
+    -o-animation: roto 1s infinite ease-in-out;
+    animation: roto 1s infinite ease-in-out;
+}
+
+.infinity-loader:before,
+.infinity-loader:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 4px solid black;
+    -moz-border-radius: 25px 25px 0 25px;
+    -ms-border-radius: 25px 25px 0 25px;
+    border-radius: 25px 25px 0 25px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.infinity-loader:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 25px 25px 25px 0;
+    -ms-border-radius: 25px 25px 25px 0;
+    border-radius: 25px 25px 25px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

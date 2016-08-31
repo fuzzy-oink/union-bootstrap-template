@@ -1,0 +1,409 @@
+﻿
+/*================================*\
+    Red theme for union template
+\*================================*/
+
+
+/*================================*\
+    Theme variables
+
+    https://color.adobe.com/Cherry-Cheesecake-color-theme-2354/
+    https://color.adobe.com/Vintage-Ralph-Lauren-color-theme-2216979/
+
+    https://color.adobe.com/Firenze-color-theme-24198/
+
+    https://color.adobe.com/Flat-UI-color-theme-2469224/
+
+    https://color.adobe.com/Phaedra-color-theme-1764754/
+
+    https://color.adobe.com/Neutral-Blue-color-theme-22361/
+
+    https://color.adobe.com/Vitamin-C-color-theme-492199/
+
+\*================================*/
+
+@accent1 : #580000;
+@accent2 : #580000;
+@accent3 : #580000;
+@accent4 : #580000;
+@accent5 : #580000;
+
+@primary : @accent1;
+@secondary : @accent2;
+@tertiary : @accent3;
+
+@gray-l0 : #EEEEEE;
+@gray-l1 : #999999;
+@gray-l2 : #666666;
+@gray-l3 : #444444;
+@gray-l4 : #222222;
+@gray-l5 : #111111;
+
+@white : #FFFFFF;
+
+/*================================*\
+    Red theme for union template
+\*================================*/
+
+body {
+	color: @gray-l2;
+}
+
+a {
+	color: @primary;
+}
+
+a:hover {
+	color: @gray-l1;
+}
+
+
+/*================================*\
+    Pre Loader
+\*================================*/
+.infinity-loader:before,
+.infinity-loader:after {
+    border-color: @primary;
+}
+
+
+
+/* ---------------------------------------------- /*
+ * box-shadow
+/* ---------------------------------------------- */
+
+.btn,
+.navbar-custom .dropdown-menu {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	color: @gray-l4;
+}
+
+/* ---------------------------------------------- /*
+ * Input-group
+/* ---------------------------------------------- */
+
+.input-group-addon {
+	background: #D8E1E4;
+	border: 2px solid #D8E1E4;
+}
+
+/* ---------------------------------------------- /*
+ * Inputs styles
+/* ---------------------------------------------- */
+
+.form-control {
+	background: @white;
+	border: 1px solid #D8E1E4;
+}
+
+.form-control:focus {
+    border-color: #878787;
+    border-color: rgba(135, 135, 135, 0.7);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(135, 135, 135, 0.7);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(135, 135, 135, 0.7);
+}
+
+div.modal-overlay {
+    background: black;
+}
+
+/* ---------------------------------------------- /*
+ * Custom button style
+/* ---------------------------------------------- */
+
+
+/* Button size */
+
+.btn-lg,
+.btn-group-lg > .btn {
+    background: @gray-l5;
+    background: rgba(17, 17, 17, 0.8);
+    color: @white;
+}
+
+.btn-lg:hover,
+.btn-group-lg > .btn:hover {
+    background: @gray-l5;
+    background: rgba(17, 17, 17, 1.8);
+    color: @white;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus {
+    background-color: @primary;
+}
+
+.btn-primary:hover,
+.btn-primary:active:focus:hover {
+    background-color: lighten(@primary, 10%);
+}
+
+.btn-primary[disabled],
+.btn-primary:disabled {
+    background-color: lighten(desaturate(@primary, 70%), 50%);
+}
+
+.btn-primary[disabled]:hover,
+.btn-primary:disabled:hover {
+    background-color: lighten(desaturate(@primary, 70%), 60%);
+}
+
+.btn-default {
+    background-color: @gray-l0;
+}
+
+/* ---------------------------------------------- /*
+ * General Styles
+/* ---------------------------------------------- */
+
+.pfblock-gray {
+	background-color: @gray-l0;
+    border-bottom: 3px solid @primary;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pfblock-image {
+    border-bottom: 3px solid @primary;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.calltoaction h1,
+.calltoaction h2,
+.calltoaction h3,
+.calltoaction h4,
+.calltoaction h5,
+.calltoaction h6,
+.pfblock-image,
+.pfblock-image h1,
+.pfblock-image h2,
+.pfblock-image h3,
+.pfblock-image h4,
+.pfblock-image h5,
+.pfblock-image h6 {
+	color: @white;
+}
+
+    .pfblock-image .iconbox,
+    .pfblock-image .iconbox h1,
+    .pfblock-image .iconbox h2,
+    .pfblock-image .iconbox h3,
+    .pfblock-image .iconbox h4,
+    .pfblock-image .iconbox h5,
+    .pfblock-image .iconbox h6
+    {
+        color: @gray-l2;
+    }
+
+
+.pfblock-line {
+    background: #878787;
+    background: rgba(135, 135, 135, 0.5);
+}
+
+.calltoaction {
+	background-color: @gray-l4;
+	color: @gray-l1;
+}
+
+
+.calltoaction-decription{
+    color: #fff;
+}
+
+.calltoaction-btn > .btn {
+    background: @white;
+    background: rgba(255, 255, 255, .8);
+    color: @gray-l5;
+}
+
+.calltoaction-btn > .btn:hover{
+    background: @white;
+}
+
+
+/* ---------------------------------------------- /*
+ * Home
+/* ---------------------------------------------- */
+
+#home {
+    background: url(../img/cover.jpg);
+	background-color: @gray-l4;
+}
+
+.overlay {
+    background-color: #d3d3d3;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: url("../img/pattern.png");
+}
+
+.iconbox {
+    background: @white;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.iconbox-icon {
+	color: @gray-l4;
+}
+
+#wedding {
+    background: url(../img/cover_bottom.jpg);
+	background-color: @gray-l4;
+}
+
+#couple {
+    background-color: @gray-l0;
+}
+
+
+
+/* ---------------------------------------------- /*
+ * Contact
+/* ---------------------------------------------- */
+
+#contact h3 {
+    color: @white;
+}
+
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
+
+footer {
+	background: #101010;
+	color: @white;
+}
+
+.heart span {
+    color: @primary;
+}
+
+.social-links a {
+    border: 1px solid @white;
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: @white;
+    color: rgba(255, 255, 255, .2);
+}
+
+.social-links a:hover,
+div.social-links-inline a:hover, 
+div.social-links-inline button:hover {
+    border: 1px solid @white;
+    border: 1px solid rgba(255, 255, 255, .5);
+    color: #ffffff;
+    color: rgba(255, 255, 255, .8);
+}
+
+div.social-links-inline a,
+div.social-links-inline button {
+    border: 1px solid @white;
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: @white;
+    color: rgba(255, 255, 255, .2);
+}
+
+div.social-links-inline button {
+    background-color: transparent;
+}
+
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
+
+.header {
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.navbar-custom
+{
+    border-bottom: 2px solid @primary;
+
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.navbar-custom,
+.navbar-custom .dropdown-menu {
+	background: @white;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+	color: @gray-l4;
+}
+
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active a {
+	background: none;
+	color: @primary;
+}
+
+.navbar-custom .dropdown-menu {
+	border-top: 2px solid @primary;
+}
+
+.navbar-custom .nav .open > a,
+.navbar-custom .dropdown-menu > li > a:hover,
+.navbar-custom .dropdown-menu > li > a:focus {
+	background: #f5f5f5;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+	background: @gray-l4;
+}
+
+/* ---------------------------------------------- /*
+ * Scroll to top
+/* ---------------------------------------------- */
+
+.scroll-up a {
+    background-color: #878787;
+    background-color: rgba(135, 135, 135, 0.5);
+}
+
+.scroll-up a:hover,
+.scroll-up a:active {
+    background-color: #ebebeb;
+    background-color: rgba(235, 235, 235, .8);
+	color: @primary;
+}
+
+/* ---------------------------------------------- /*
+ *Scroll Down
+/* ---------------------------------------------- */
+
+.scroll-down {
+	border: 2px solid @white;
+}
+
+.scroll-down span {
+    color: @white;
+}
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+	background: #f2f2f2;
+}
