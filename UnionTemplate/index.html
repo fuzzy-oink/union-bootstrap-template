@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Union wedding template</title>
-    
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
-    
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
     <link rel="stylesheet" href="vendor/css/bootstrap.css" />
     <link rel="stylesheet" href="vendor/css/font-awesome.css" />
     <link rel="stylesheet" href="vendor/css/TimeCircles.css" />
@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/infinity-loader.css" />
 
-    <link rel="stylesheet" href="css/red.theme.css" id="currentTheme"/>
-    
+    <link rel="stylesheet" href="css/red.theme.css" id="currentTheme" />
+
     <script type="text/javascript" src="vendor/js/jquery-3.1.0.js"></script>
     <script type="text/javascript" src="vendor/js/bootstrap.js"></script>
     <script type="text/javascript" src="vendor/js/TimeCircles.js"></script>
@@ -26,12 +26,15 @@
     <div id="preloader">
         <div id="preloaderContainer">
             <div class="infinity-loader"></div>
-            <div class="loading-text">We're getting everything ready for you.<br />It'll be worth the wait, we promise!</div>
+            <div class="loading-text">
+                We're getting everything ready for you.<br />
+                It'll be worth the wait, we promise!
+            </div>
         </div>
     </div>
 
     <header class="header">
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-custom navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
@@ -49,7 +52,15 @@
                         <li><a href="#couple">About us</a></li>
                         <li><a href="#wedding">Our wedding</a></li>
                         <li><a href="#contact">Contact us</a></li>
-                        <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rsvpModal">RSVP</button></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Change Theme <span class="fa fa-caret-down"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="download">
+                                <li><a id="redTheme">Red</a></li>
+                                <li><a id="blueTheme">Blue</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rsvpModal">RSVP</button></li>
                     </ul>
                 </div>
             </div>
@@ -181,9 +192,10 @@
                                 <h3 class="iconbox-title">Venue</h3>
                                 <div class="iconbox-desc">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie, turpis vitae imperdiet imperdiet, nisi tortor varius turpis, eget pulvinar turpis lacus vitae massa. Vivamus viverra augue in finibus tempor. Proin eros lectus, dapibus nec magna posuere, placerat dignissim massa. Aenean non leo lacus. Duis lobortis purus sed enim interdum efficitur. In sit amet augue sem. Nam auctor risus vitae ligula vehicula, a sollicitudin sem vehicula. Mauris vel pulvinar arcu.
-                                    <br/>
+                                    <br />
                                     In tincidunt malesuada neque, vitae accumsan nisi aliquam vitae. Praesent eget risus eget justo molestie volutpat eu ac urna. Donec sodales eget massa sed aliquet. Cras ac euismod dui, eu interdum justo. Sed consectetur porttitor neque imperdiet suscipit. Ut tempus ex sagittis, consequat eros eget, blandit risus. Vivamus malesuada ex et ullamcorper feugiat. Pellentesque vel ultricies lorem. Nunc ut accumsan sem. Quisque molestie volutpat suscipit. Donec facilisis orci sed aliquet accumsan. Praesent vel tortor tortor. Nunc suscipit mi ut lectus maximus, nec auctor risus congue.
-                                    <br /><br />
+                                    <br />
+                                    <br />
                                     <ul class="list-unstyled">
                                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                                         <li>Duis ac libero porta, elementum tortor quis, finibus est.</li>
@@ -200,7 +212,7 @@
                             <div class="iconbox-text">
                                 <h3 class="iconbox-title">Map</h3>
                                 <div class="iconbox-desc embed-responsive embed-responsive-4by3">
-                                    <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
+                                    <div class="map-overlay" onclick="style.pointerEvents='none'"></div>
                                     <iframe width="600" height="450" style="border: 0" src="https://www.google.com/maps/embed/v1/place?q=Trou+Aux+Biches+Resort+%26+Spa&key=AIzaSyANWHG9o6W9OXLfVYrfhEC_jOKCPJVKNYQ" allowfullscreen></iframe>
                                 </div>
                             </div>
@@ -230,7 +242,7 @@
     </div>
 
     <footer id="contact" style="display: none;">
-        <h3>Kontak ons</h3>
+        <h3>Contact Us</h3>
         <div class="social-links-inline">
             <a href="mailto:your_email_address_here" class="fadeInUp"><i class="fa fa-envelope no-smooth-scroll"></i></a>
             <a href="#" class="fadeInUp" target="_blank"><i class="fa fa-facebook no-smooth-scroll"></i></a>

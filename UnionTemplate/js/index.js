@@ -10,80 +10,86 @@ function SetupRsvpMessages() {
     }
 }
 
+function changeCSS(cssFile) {
+    $("#currentTheme").attr("href", cssFile);
+}
+
 (function ($) {
 
     $(window).on("load" , function () {
         $("#preloaderContainer").fadeOut(400);
-		$("#preloader").delay(100).fadeOut(400, function() {
-		    $("body").removeClass("loading");
-		});
-	});
+        $("#preloader").delay(100).fadeOut(400, function() {
+            $("body").removeClass("loading");
+        });
+    });
 
-	$(function () {
+    $(function () {
 
-	    SetupRsvpMessages();
+        SetupRsvpMessages();
 
-	    $("a[href*='#']").not(".no-smooth-scroll").bind("click", function(e){
+        $("a[href*='#']").not(".no-smooth-scroll").bind("click", function(e){
            
-			var anchor = $(this);
-			$("html, body").stop().animate({
-				scrollTop: $(anchor.attr("href")).offset().top - $("nav").height()
-			}, 1000);
-			e.preventDefault();
-		});
+            var anchor = $(this);
+            $("html, body").stop().animate({
+                scrollTop: $(anchor.attr("href")).offset().top - $("nav").height()
+            }, 1000);
+            e.preventDefault();
+        });
 
-	    $("body").scrollspy({
-	        target: ".navbar-custom",
-	        offset: 70
-	    });
+        $("body").scrollspy({
+            target: ".navbar-custom",
+            offset: 70
+        });
 
-		$(window).resize(function(){
-		    $("#DateCountdown").TimeCircles().rebuild();
-		});
+        $(window).resize(function(){
+            $("#DateCountdown").TimeCircles().rebuild();
+        });
 
-		$("form").submit(function(e) {
-		    $(".btn").prop("disabled", true);
-		    $("div.modal-overlay").removeClass("hidden");
-		});
+        $("form").submit(function(e) {
+            $(".btn").prop("disabled", true);
+            $("div.modal-overlay").removeClass("hidden");
+        });
 
-	    $("#DateCountdown")
+        $("#DateCountdown")
             .attr("data-date", "2017-06-01 16:00:00")
             .TimeCircles({
-		        "animation": "smooth",
-		        "bg_width": 0.2,
-		        "fg_width": 0.03,
-		        "circle_bg_color": "#90989F",
-		        "time": {
-		            "Days": {
-		                "text": "Days",
-		                "color": "#ffffff",
-		                "show": true
-		            },
-		            "Hours": {
-		                "text": "Hours",
-		                "color": "#ffffff",
-		                "show": true
-		            },
-		            "Minutes": {
-		                "text": "Minutes",
-		                "color": "#ffffff",
-		                "show": true
-		            },
+                "animation": "smooth",
+                "bg_width": 0.2,
+                "fg_width": 0.03,
+                "circle_bg_color": "#90989F",
+                "time": {
+                    "Days": {
+                        "text": "Days",
+                        "color": "#ffffff",
+                        "show": true
+                    },
+                    "Hours": {
+                        "text": "Hours",
+                        "color": "#ffffff",
+                        "show": true
+                    },
+                    "Minutes": {
+                        "text": "Minutes",
+                        "color": "#ffffff",
+                        "show": true
+                    },
 
-		            "Seconds": {
-		                "text": "Seconds",
-		                "color": "#ffffff",
-		                "show": true
-		            }
-		        }
-		});
+                    "Seconds": {
+                        "text": "Seconds",
+                        "color": "#ffffff",
+                        "show": true
+                    }
+                }
+        });
 
-		window.setTimeout(function() {
-		    $("#couple").show();
-		    $("#wedding").show();
-		    $("footer").show();
-		}, 1000);
-	    
-	});
+        window.setTimeout(function() {
+            $("#couple").show();
+            $("#wedding").show();
+            $("footer").show();
+        }, 1000);
+
+        $("#redTheme").on("click", function () { changeCSS("css/red.theme.css") });
+        $("#blueTheme").on("click", function () { changeCSS("css/blue.theme.css") });
+    });
 
 })(jQuery);
