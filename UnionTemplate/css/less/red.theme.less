@@ -22,15 +22,20 @@
 
 \*================================*/
 
-@accent1 : #580000;
-@accent2 : #580000;
-@accent3 : #580000;
-@accent4 : #580000;
-@accent5 : #580000;
+@accent1 : #B9121B;
+@accent2 : #4C1B1B;
+@accent3 : #F6E497;
+@accent4 : #FCFAE1;
+@accent5 : #BD8D46;
 
 @primary : @accent1;
 @secondary : @accent2;
 @tertiary : @accent3;
+
+@success: #75b775;
+@info : #3c6b79;
+@warning : #caa269;
+@danger : @accent2;
 
 @gray-l0 : #EEEEEE;
 @gray-l1 : #999999;
@@ -46,15 +51,15 @@
 \*================================*/
 
 body {
-	color: @gray-l2;
+    color: @gray-l2;
 }
 
 a {
-	color: @primary;
+    color: @primary;
 }
 
 a:hover {
-	color: @gray-l1;
+    color: @gray-l1;
 }
 
 
@@ -72,8 +77,30 @@ a:hover {
  * box-shadow
 /* ---------------------------------------------- */
 
-.btn,
+.btn {
+    &.btn-primary,
+    &.btn-success,
+    &.btn-info,
+    &.btn-warning,
+    &.btn-default,
+    &.btn-danger {
+        .box-shadow();
+    }
+}
+
+.input-group-btn {
+    .btn {
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+}
+
 .navbar-custom .dropdown-menu {
+    .box-shadow();
+}
+
+.box-shadow() {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -84,7 +111,7 @@ a:hover {
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	color: @gray-l4;
+    color: @gray-l4;
 }
 
 /* ---------------------------------------------- /*
@@ -92,8 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------------------------- */
 
 .input-group-addon {
-	background: #D8E1E4;
-	border: 2px solid #D8E1E4;
+    background: #D8E1E4;
+    border: 2px solid #D8E1E4;
 }
 
 /* ---------------------------------------------- /*
@@ -101,8 +128,8 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------------------------- */
 
 .form-control {
-	background: @white;
-	border: 1px solid #D8E1E4;
+    background: @white;
+    border: 1px solid #D8E1E4;
 }
 
 .form-control:focus {
@@ -133,7 +160,7 @@ div.modal-overlay {
 .btn-lg:hover,
 .btn-group-lg > .btn:hover {
     background: @gray-l5;
-    background: rgba(17, 17, 17, 1.8);
+    background: rgba(17, 17, 17, 0.8);
     color: @white;
 }
 
@@ -159,8 +186,331 @@ div.modal-overlay {
     background-color: lighten(desaturate(@primary, 70%), 60%);
 }
 
-.btn-default {
-    background-color: @gray-l0;
+.btn-default,
+.btn-default:focus,
+.btn-default:active,
+.btn-default:active:focus {
+    background-color: @accent4;
+}
+
+.btn-default:hover,
+.btn-default:active:focus:hover {
+    background-color: lighten(@accent4, 10%);
+}
+
+.btn-default[disabled],
+.btn-default:disabled {
+    background-color: lighten(desaturate(@accent4, 70%), 50%);
+}
+
+.btn-default[disabled]:hover,
+.btn-default:disabled:hover {
+    background-color: lighten(desaturate(@accent4, 70%), 60%);
+}
+
+.btn-success,
+.btn-success:focus,
+.btn-success:active,
+.btn-success:active:focus {
+    background-color: @success;
+}
+
+.btn-success:hover,
+.btn-success:active:focus:hover {
+    background-color: lighten(@success, 10%);
+}
+
+.btn-success[disabled],
+.btn-success:disabled {
+    background-color: lighten(desaturate(@success, 70%), 50%);
+}
+
+.btn-success[disabled]:hover,
+.btn-success:disabled:hover {
+    background-color: lighten(desaturate(@success, 70%), 60%);
+}
+
+.btn-info,
+.btn-info:focus,
+.btn-info:active,
+.btn-info:active:focus {
+    background-color: @info;
+}
+
+.btn-info:hover,
+.btn-info:active:focus:hover {
+    background-color: lighten(@info, 10%);
+}
+
+.btn-info[disabled],
+.btn-info:disabled {
+    background-color: lighten(desaturate(@info, 70%), 50%);
+}
+
+.btn-info[disabled]:hover,
+.btn-info:disabled:hover {
+    background-color: lighten(desaturate(@info, 70%), 60%);
+}
+
+.btn-warning,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning:active:focus {
+    background-color: @warning;
+}
+
+.btn-warning:hover,
+.btn-warning:active:focus:hover {
+    background-color: lighten(@warning, 10%);
+}
+
+.btn-warning[disabled],
+.btn-warning:disabled {
+    background-color: lighten(desaturate(@warning, 70%), 50%);
+}
+
+.btn-warning[disabled]:hover,
+.btn-warning:disabled:hover {
+    background-color: lighten(desaturate(@warning, 70%), 60%);
+}
+
+.btn-danger,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger:active:focus {
+    background-color: @danger;
+}
+
+.btn-danger:hover,
+.btn-danger:active:focus:hover {
+    background-color: lighten(@danger, 10%);
+}
+
+.btn-danger[disabled],
+.btn-danger:disabled {
+    background-color: lighten(desaturate(@danger, 70%), 50%);
+}
+
+.btn-danger[disabled]:hover,
+.btn-danger:disabled:hover {
+    background-color: lighten(desaturate(@danger, 70%), 60%);
+}
+
+.btn-link,
+.btn-link:focus,
+.btn-link:active,
+.btn-link:active:focus {
+    background-color: transparent;
+}
+
+.btn-link:hover,
+.btn-link:active:focus:hover {
+    background-color: transparent;
+}
+
+.btn-link[disabled],
+.btn-link:disabled {
+    background-color: transparent;
+}
+
+.btn-link[disabled]:hover,
+.btn-link:disabled:hover {
+    background-color: transparent;
+}
+
+/* ---------------------------------------------- /*
+ * Contextual classes
+/* ---------------------------------------------- */
+
+.has-success {
+    .help-block,
+    .control-label,
+    .radio,
+    .checkbox,
+    .radio-inline,
+    .checkbox-inline,
+    &.radio label,
+    &.checkbox label, 
+    &.radio-inline label, 
+    &.checkbox-inline label {
+        color: @success;
+    }
+
+    .form-control {
+        border-color: @success;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+}
+
+.has-warning {
+    .help-block,
+    .control-label,
+    .radio,
+    .checkbox,
+    .radio-inline,
+    .checkbox-inline,
+    &.radio label,
+    &.checkbox label,
+    &.radio-inline label,
+    &.checkbox-inline label {
+        color: @warning;
+    }
+
+    .form-control {
+        border-color: @warning;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+}
+
+.has-error {
+    .help-block,
+    .control-label,
+    .radio,
+    .checkbox,
+    .radio-inline,
+    .checkbox-inline,
+    &.radio label,
+    &.checkbox label, 
+    &.radio-inline label, 
+    &.checkbox-inline label {
+        color: @danger;
+    }
+
+    .form-control {
+        border-color: @danger;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+}
+
+.text-muted {
+    color: @gray-l2;
+}
+
+.text-primary {
+    color: @primary;
+}
+
+.text-info {
+    color: @info;
+}
+
+.text-success {
+    color: @success;
+}
+
+.text-warning {
+    color: @warning;
+}
+
+.text-error {
+    color: @danger;
+}
+
+.table {
+    > thead,
+    > tfoot,
+    > tbody {
+        > tr > td.info,
+        > tr > th.info,
+        > tr.info > td,
+        > tr.info > th {
+            background-color: lighten(@info, 50%);
+        }
+
+        > tr > td.success,
+        > tr > th.success,
+        > tr.success > td,
+        > tr.success > th {
+            background-color: lighten(@success, 20%);
+        }
+
+        > tr > td.danger,
+        > tr > th.danger,
+        > tr.danger > td,
+        > tr.danger > th {
+            background-color: lighten(@danger, 60%);
+        }
+
+        > tr > td.warning,
+        > tr > th.warning,
+        > tr.warning > td,
+        > tr.warning > th {
+            background-color: lighten(@warning, 20%);
+        }
+
+        > tr > td.active,
+        > tr > th.active,
+        > tr.active > td,
+        > tr.active > th {
+            background-color: lighten(@gray-l7, 20%);
+        }
+    }
+}
+
+.table-hover {
+    > thead,
+    > tfoot,
+    > tbody {
+        > tr > td.info:hover,
+        > tr > th.info:hover,
+        > tr.info:hover > td,
+        > tr:hover > .info,
+        > tr.info:hover > th {
+            background-color: lighten(@info, 30%);
+        }
+
+        > tr > td.success:hover,
+        > tr > th.success:hover,
+        > tr.success:hover > td,
+        > tr:hover > .success,
+        > tr.success:hover > th {
+            background-color: lighten(@success, 5%);
+        }
+
+        > tr > td.danger:hover,
+        > tr > th.danger:hover,
+        > tr.danger:hover > td,
+        > tr:hover > .danger,
+        > tr.danger:hover > th {
+            background-color: lighten(@danger, 50%);
+        }
+
+        > tr > td.warning:hover,
+        > tr > th.warning:hover,
+        > tr.warning:hover > td,
+        > tr:hover > .warning,
+        > tr.warning:hover > th {
+            background-color: lighten(@warning, 5%);
+        }
+
+        > tr > td.active:hover,
+        > tr > th.active:hover,
+        > tr.active:hover > td,
+        > tr:hover > .active,
+        > tr.active:hover > th {
+            background-color: lighten(@gray-l3, 5%);
+        }
+    }
+}
+
+/* ---------------------------------------------- /*
+ * Blockquote Styles
+/* ---------------------------------------------- */
+
+blockquote {
+    border-left-color: darken(@tertiary, 50%);
+    background-color: lighten(@tertiary, 20%);
+}
+
+.blockquote-reverse, blockquote.pull-right {
+    border-right-color: darken(@tertiary, 50%);
+    background-color: lighten(@tertiary, 20%);
 }
 
 /* ---------------------------------------------- /*
@@ -168,7 +518,7 @@ div.modal-overlay {
 /* ---------------------------------------------- */
 
 .pfblock-gray {
-	background-color: @gray-l0;
+    background-color: @gray-l0;
     border-bottom: 3px solid @primary;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -195,7 +545,7 @@ div.modal-overlay {
 .pfblock-image h4,
 .pfblock-image h5,
 .pfblock-image h6 {
-	color: @white;
+    color: @white;
 }
 
     .pfblock-image .iconbox,
@@ -216,8 +566,8 @@ div.modal-overlay {
 }
 
 .calltoaction {
-	background-color: @gray-l4;
-	color: @gray-l1;
+    background-color: @gray-l4;
+    color: @gray-l1;
 }
 
 
@@ -241,7 +591,7 @@ div.modal-overlay {
 /* ---------------------------------------------- */
 
 #home {
-	background-color: @gray-l4;
+    background-color: @gray-l4;
 }
 
 .overlay {
@@ -257,11 +607,11 @@ div.modal-overlay {
 }
 
 .iconbox-icon {
-	color: @gray-l4;
+    color: @gray-l4;
 }
 
 #wedding {
-	background-color: @gray-l4;
+    background-color: @gray-l4;
 }
 
 #couple {
@@ -283,8 +633,8 @@ div.modal-overlay {
 /* ---------------------------------------------- */
 
 footer {
-	background: #101010;
-	color: @white;
+    background: #101010;
+    color: @white;
 }
 
 .heart span {
@@ -324,7 +674,7 @@ div.social-links-inline button {
 /* ---------------------------------------------- */
 
 .header {
-	border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .navbar-custom
@@ -338,35 +688,35 @@ div.social-links-inline button {
 
 .navbar-custom,
 .navbar-custom .dropdown-menu {
-	background: @white;
+    background: @white;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
-	color: @gray-l4;
+    color: @gray-l4;
 }
 
 .navbar-custom .nav li.active,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .navbar-nav > li.active a {
-	background: none;
-	color: @primary;
+    background: none;
+    color: @primary;
 }
 
 .navbar-custom .dropdown-menu {
-	border-top: 2px solid @primary;
+    border-top: 2px solid @primary;
 }
 
 .navbar-custom .nav .open > a,
 .navbar-custom .dropdown-menu > li > a:hover,
 .navbar-custom .dropdown-menu > li > a:focus {
-	background: #f5f5f5;
+    background: #f5f5f5;
 }
 
 .navbar-custom .navbar-toggle .icon-bar {
-	background: @gray-l4;
+    background: @gray-l4;
 }
 
 /* ---------------------------------------------- /*
@@ -382,7 +732,7 @@ div.social-links-inline button {
 .scroll-up a:active {
     background-color: #ebebeb;
     background-color: rgba(235, 235, 235, .8);
-	color: @primary;
+    color: @primary;
 }
 
 /* ---------------------------------------------- /*
@@ -390,7 +740,7 @@ div.social-links-inline button {
 /* ---------------------------------------------- */
 
 .scroll-down {
-	border: 2px solid @white;
+    border: 2px solid @white;
 }
 
 .scroll-down span {
@@ -402,5 +752,5 @@ div.social-links-inline button {
 /* ---------------------------------------------- */
 
 #preloader {
-	background: #f2f2f2;
+    background: #f2f2f2;
 }

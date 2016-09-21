@@ -33,7 +33,7 @@ a:hover {
   animation-delay: 2s;
 }
 /* ---------------------------------------------- /*
- * Transition elsements
+ * Transition elements
 /* ---------------------------------------------- */
 .navbar a,
 .form-control {
@@ -97,7 +97,8 @@ h6 {
 #filter li,
 .scroll-up a,
 .form-control,
-.input-group-addon {
+.input-group-addon,
+.well {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
@@ -169,7 +170,7 @@ div.modal-overlay i.fa {
 /* ---------------------------------------------- /*
  * Custom button style
 /* ---------------------------------------------- */
-.btn {
+:not(.input-group-btn) .btn {
   /*font-family: Raleway, sans-serif;*/
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -635,4 +636,10 @@ div.social-links-inline button {
     margin: 0 0 30px;
     letter-spacing: 3px;
   }
+}
+/* ---------------------------------------------- /*
+ * Font awesome overloads
+/* ---------------------------------------------- */
+.fa-1-25x {
+  font-size: 1.25em;
 }
