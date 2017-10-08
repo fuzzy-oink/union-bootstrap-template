@@ -1,7 +1,262 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Union wedding template</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <link rel="stylesheet" href="vendor/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/css/TimeCircles.css" />
+    <link rel="stylesheet" href="vendor/css/animate.css" />
+
+    <link rel="stylesheet" href="css/shared.theme.css" />
+    <link rel="stylesheet" href="css/infinity-loader.css" />
+
+    <link rel="stylesheet" href="css/red.theme.css" id="currentTheme" />
+
+    <script type="text/javascript" src="vendor/js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="vendor/js/bootstrap.js"></script>
+    <script type="text/javascript" src="vendor/js/TimeCircles.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="preloader">
+        <div id="preloaderContainer">
+            <div class="infinity-loader"></div>
+            <div class="loading-text">
+                We're getting everything ready for you.<br />
+                It'll be worth the wait, we promise!
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar navbar-custom navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home">Kayleigh & Christopher</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#couple">About us</a></li>
+                        <li><a href="#wedding">Our wedding</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Theme <span class="fa fa-caret-down"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="download">
+                                <li><a href="" id="redTheme">Red theme</a></li>
+                                <li><a href="" id="blueTheme">Blue theme</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href=".\components.html">Components demo</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rsvpModal">RSVP</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="pfblock-image screen-halfheight">
+        <div class="overlay">
+            <h1>Kayleigh and Christopher</h1>
+            <div class="start">are getting married in</div>
+
+            <div id="DateCountdown"></div>
+
+            <div class="start" style="margin-bottom: 15px;">
+                <p>
+                    We can't wait!
+                    <br />
+                    Come celebrate this <b>momentous</b> occasion with us on the <b>1st of June 2017</b>
+                    <br />
+                    We are <b>very</b> excited! We hope you are too!
+                    <br />
+                    Here you can find out a bit more about us and our wedding.
+                </p>
+                <button type="button" class="btn btn-primary btn-rsvp" data-toggle="modal" data-target="#rsvpModal">I want to attend!</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="couple" class="pfblock pfblock-gray" style="display: none;">
+        <div class="heart-texture background-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="pfblock-header animated fadeInUp">
+                            <h2 class="pfblock-title">Who we are</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget varius lorem, vel varius leo. Pellentesque at sem ullamcorper, ullamcorper mi sed, dignissim sapien.</p>
+                            <div class="pfblock-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="iconbox animation-delay-1 animated slideInLeft">
+                            <div class="iconbox-text">
+                                <h3 class="iconbox-title">Kayleigh</h3>
+                                <div class="iconbox-desc">
+                                    <img src="./img/bride.png" alt="Kayleigh" />
+                                    <p>Praesent vel nibh sed est consequat ultrices nec vel orci. Etiam volutpat mauris vitae porta elementum. Nulla quis lectus sed turpis aliquam interdum sed quis eros. Morbi leo metus, ullamcorper non erat ac, eleifend sagittis ante. Nulla scelerisque, mauris a convallis molestie, odio tellus malesuada diam, non gravida libero leo at sem. Vivamus at aliquam urna, et placerat erat. Sed at nibh dapibus, posuere nisl vel, rutrum risus. Donec id orci ut nibh commodo auctor ac quis tellus. Sed dictum mi vel enim maximus dapibus. Morbi gravida at metus a pharetra. In sodales arcu sed semper euismod. Aliquam in pretium lectus, ut laoreet neque. Nunc consectetur consectetur orci id sagittis. Morbi at fringilla orci.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="animated animation-delay-1 fadeInDown text-center">
+                            <h2 class="fancy-font-large">&</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="iconbox animated animation-delay-1 slideInRight">
+                            <div class="iconbox-text">
+                                <h3 class="iconbox-title">Christopher</h3>
+                                <div class="iconbox-desc">
+                                    <img src="./img/groom.png" alt="Christopher" />
+                                    <p>Ut semper euismod orci quis dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis in sem purus. Vestibulum at nibh sit amet est sagittis tempor et ac ex. Pellentesque odio felis, euismod sed porttitor nec, convallis fermentum felis. Cras elementum metus sit amet orci porta, quis vulputate massa vestibulum. Aliquam malesuada tempor diam vel bibendum. Fusce condimentum metus neque, eu sagittis nisl dictum ut. Nulla pretium non ex id consequat. Sed et auctor velit. Ut ac arcu ipsum. Phasellus purus felis, sodales non pulvinar non, laoreet sit amet sem. Pellentesque ac lectus erat. Phasellus ac dolor finibus, ultricies est eu, ornare metus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="iconbox fadeInUp">
+                            <div class="iconbox-text">
+                                <h3 class="iconbox-title">How we met</h3>
+                                <div class="iconbox-desc">
+                                    Nunc elementum libero in leo aliquet, in laoreet lacus finibus. Nunc molestie placerat neque nec malesuada. Curabitur sed ligula ornare ligula molestie laoreet. Phasellus tempus tortor ut leo convallis aliquam. Curabitur auctor, mauris id euismod lacinia, velit tellus condimentum tortor, ut mollis justo sapien ut orci. Morbi lobortis ac sem consequat imperdiet. Nunc tempus suscipit augue, vitae placerat ante dignissim in. Fusce sit amet malesuada metus. Pellentesque imperdiet ex id augue varius scelerisque. Morbi venenatis auctor ultricies. Maecenas porttitor turpis at enim faucibus tempus. Vestibulum aliquet risus venenatis dui rutrum aliquet. Aenean non dignissim tortor, at ultricies justo. Suspendisse ut nisi hendrerit turpis tristique gravida. Fusce a nunc tristique, viverra augue vitae, condimentum ipsum.
+                                </div>
+                                <br />
+                                <button type="button" class="btn btn-primary btn-rsvp" data-toggle="modal" data-target="#rsvpModal"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="iconbox fadeInUp">
+                            <!--<div id="ons-slideshow" class="carousel slide " data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#couple-slideshow" data-slide-to="0" class="active"></li>
+                                    
+                                </ol>
+
+                                <div class="carousel-inner" role="listbox">
+
+                                </div>
+
+                                <a class="left carousel-control no-smooth-scroll" href="#ons-slideshow" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control no-smooth-scroll" href="#ons-slideshow" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wedding" class="pfblock-image" style="display: none;">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="pfblock-header wow fadeInUp">
+                            <h2 class="pfblock-title">More details about our wedding</h2>
+                            <div class="pfblock-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="iconbox wow slideInLeft">
+                            <div class="iconbox-text">
+                                <h3 class="iconbox-title">Venue</h3>
+                                <div class="iconbox-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie, turpis vitae imperdiet imperdiet, nisi tortor varius turpis, eget pulvinar turpis lacus vitae massa. Vivamus viverra augue in finibus tempor. Proin eros lectus, dapibus nec magna posuere, placerat dignissim massa. Aenean non leo lacus. Duis lobortis purus sed enim interdum efficitur. In sit amet augue sem. Nam auctor risus vitae ligula vehicula, a sollicitudin sem vehicula. Mauris vel pulvinar arcu.
+                                    <br />
+                                    In tincidunt malesuada neque, vitae accumsan nisi aliquam vitae. Praesent eget risus eget justo molestie volutpat eu ac urna. Donec sodales eget massa sed aliquet. Cras ac euismod dui, eu interdum justo. Sed consectetur porttitor neque imperdiet suscipit. Ut tempus ex sagittis, consequat eros eget, blandit risus. Vivamus malesuada ex et ullamcorper feugiat. Pellentesque vel ultricies lorem. Nunc ut accumsan sem. Quisque molestie volutpat suscipit. Donec facilisis orci sed aliquet accumsan. Praesent vel tortor tortor. Nunc suscipit mi ut lectus maximus, nec auctor risus congue.
+                                    <br />
+                                    <br />
+                                    <ul class="list-unstyled">
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        <li>Duis ac libero porta, elementum tortor quis, finibus est.</li>
+                                        <li>Duis eget massa aliquet, mollis mi eget, pulvinar nibh.</li>
+                                        <li>In malesuada erat vitae libero vehicula faucibus.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <div class="iconbox wow slideInRight">
+                            <div class="iconbox-text">
+                                <h3 class="iconbox-title">Map</h3>
+                                <div class="iconbox-desc embed-responsive embed-responsive-4by3">
+                                    <div class="map-overlay" onclick="style.pointerEvents='none'"></div>
+                                    <iframe width="600" height="450" style="border: 0" src="https://www.google.com/maps/embed/v1/place?q=Trou+Aux+Biches+Resort+%26+Spa&key=AIzaSyANWHG9o6W9OXLfVYrfhEC_jOKCPJVKNYQ" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="sentModal" class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Dankie!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Ons het jou RSVP gekry!</p>
+                    <p>Sien uit daarna om jou by die troue te sien!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-primary">Lekker!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" style="display: none;">
+        <h3>Contact Us</h3>
+        <div class="social-links-inline">
+            <a href="mailto:your_email_address_here" class="fadeInUp"><i class="fa fa-envelope no-smooth-scroll"></i></a>
+            <a href="#" class="fadeInUp" target="_blank"><i class="fa fa-facebook no-smooth-scroll"></i></a>
+            <a href="#" class="fadeInUp" target="_blank"><i class="fa fa-twitter no-smooth-scroll"></i></a>
+            <button type="button" class="" data-toggle="modal" data-target="#rsvpModal">RSVP</button>
+        </div>
+
+        <p class="heart">
+            Made with&nbsp;<span class="fa fa-heart animated pulse"></span>&nbsp;by Fuzzy Designs<br />
+            © 2016 | Images: <a class="no-smooth-scroll" href="https://unsplash.com/">Unsplash</a> & <a class="no-smooth-scroll" href="http://zoomwalls.com/">Zoomwalls</a>
+        </p>
+    </footer>
 </body>
 </html>

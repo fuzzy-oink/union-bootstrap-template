@@ -1,0 +1,309 @@
+/*================================*\
+    Red theme for union template
+\*================================*/
+/*================================*\
+    Theme variables
+
+    https://color.adobe.com/Cherry-Cheesecake-color-theme-2354/
+    https://color.adobe.com/Vintage-Ralph-Lauren-color-theme-2216979/
+
+    https://color.adobe.com/Firenze-color-theme-24198/
+
+    https://color.adobe.com/Flat-UI-color-theme-2469224/
+
+    https://color.adobe.com/Phaedra-color-theme-1764754/
+
+    https://color.adobe.com/Neutral-Blue-color-theme-22361/
+
+    https://color.adobe.com/Vitamin-C-color-theme-492199/
+
+\*================================*/
+/*================================*\
+    Red theme for union template
+\*================================*/
+body {
+  color: #666666;
+}
+a {
+  color: #580000;
+}
+a:hover {
+  color: #999999;
+}
+/*================================*\
+    Pre Loader
+\*================================*/
+.infinity-loader:before,
+.infinity-loader:after {
+  border-color: #580000;
+}
+/* ---------------------------------------------- /*
+ * box-shadow
+/* ---------------------------------------------- */
+.btn,
+.navbar-custom .dropdown-menu {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
+}
+/* ---------------------------------------------- /*
+ * Input-group
+/* ---------------------------------------------- */
+.input-group-addon {
+  background: #D8E1E4;
+  border: 2px solid #D8E1E4;
+}
+/* ---------------------------------------------- /*
+ * Inputs styles
+/* ---------------------------------------------- */
+.form-control {
+  background: #FFFFFF;
+  border: 1px solid #D8E1E4;
+}
+.form-control:focus {
+  border-color: #878787;
+  border-color: rgba(135, 135, 135, 0.7);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 135, 135, 0.7);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 135, 135, 0.7);
+}
+div.modal-overlay {
+  background: black;
+}
+/* ---------------------------------------------- /*
+ * Custom button style
+/* ---------------------------------------------- */
+/* Button size */
+.btn-lg,
+.btn-group-lg > .btn {
+  background: #111111;
+  background: rgba(17, 17, 17, 0.8);
+  color: #FFFFFF;
+}
+.btn-lg:hover,
+.btn-group-lg > .btn:hover {
+  background: #111111;
+  color: #FFFFFF;
+}
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus {
+  background-color: darkblue;
+}
+.btn-primary:hover,
+.btn-primary:active:focus:hover {
+  background-color: #8b0000;
+}
+.btn-primary[disabled],
+.btn-primary:disabled {
+  background-color: #c59292;
+}
+.btn-primary[disabled]:hover,
+.btn-primary:disabled:hover {
+  background-color: #d6b4b4;
+}
+.btn-default {
+  background-color: #EEEEEE;
+}
+/* ---------------------------------------------- /*
+ * General Styles
+/* ---------------------------------------------- */
+.pfblock-gray {
+  background-color: #EEEEEE;
+  border-bottom: 3px solid #580000;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.pfblock-image {
+  border-bottom: 3px solid #580000;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.calltoaction h1,
+.calltoaction h2,
+.calltoaction h3,
+.calltoaction h4,
+.calltoaction h5,
+.calltoaction h6,
+.pfblock-image,
+.pfblock-image h1,
+.pfblock-image h2,
+.pfblock-image h3,
+.pfblock-image h4,
+.pfblock-image h5,
+.pfblock-image h6 {
+  color: #FFFFFF;
+}
+.pfblock-image .iconbox,
+.pfblock-image .iconbox h1,
+.pfblock-image .iconbox h2,
+.pfblock-image .iconbox h3,
+.pfblock-image .iconbox h4,
+.pfblock-image .iconbox h5,
+.pfblock-image .iconbox h6 {
+  color: #666666;
+}
+.pfblock-line {
+  background: #878787;
+  background: rgba(135, 135, 135, 0.5);
+}
+.calltoaction {
+  background-color: #222222;
+  color: #999999;
+}
+.calltoaction-decription {
+  color: #fff;
+}
+.calltoaction-btn > .btn {
+  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.8);
+  color: #111111;
+}
+.calltoaction-btn > .btn:hover {
+  background: #FFFFFF;
+}
+/* ---------------------------------------------- /*
+ * Home
+/* ---------------------------------------------- */
+#home {
+  background-color: #222222;
+}
+.overlay {
+  background-color: #d3d3d3;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.iconbox {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.iconbox-icon {
+  color: #222222;
+}
+#wedding {
+  background-color: #222222;
+}
+#couple {
+  background-color: #EEEEEE;
+}
+/* ---------------------------------------------- /*
+ * Contact
+/* ---------------------------------------------- */
+#contact h3 {
+  color: #FFFFFF;
+}
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
+footer {
+  background: #101010;
+  color: #FFFFFF;
+}
+.heart span {
+  color: #580000;
+}
+.social-links a {
+  border: 1px solid #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.2);
+}
+.social-links a:hover,
+div.social-links-inline a:hover,
+div.social-links-inline button:hover {
+  border: 1px solid #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
+}
+div.social-links-inline a,
+div.social-links-inline button {
+  border: 1px solid #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.2);
+}
+div.social-links-inline button {
+  background-color: transparent;
+}
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
+.header {
+  border-bottom: 1px solid #f5f5f5;
+}
+.navbar-custom {
+  border-bottom: 2px solid #580000;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.navbar-custom,
+.navbar-custom .dropdown-menu {
+  background: #FFFFFF;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+  color: #222222;
+}
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active a {
+  background: none;
+  color: #580000;
+}
+.navbar-custom .dropdown-menu {
+  border-top: 2px solid #580000;
+}
+.navbar-custom .nav .open > a,
+.navbar-custom .dropdown-menu > li > a:hover,
+.navbar-custom .dropdown-menu > li > a:focus {
+  background: #f5f5f5;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background: #222222;
+}
+/* ---------------------------------------------- /*
+ * Scroll to top
+/* ---------------------------------------------- */
+.scroll-up a {
+  background-color: #878787;
+  background-color: rgba(135, 135, 135, 0.5);
+}
+.scroll-up a:hover,
+.scroll-up a:active {
+  background-color: #ebebeb;
+  background-color: rgba(235, 235, 235, 0.8);
+  color: #580000;
+}
+/* ---------------------------------------------- /*
+ *Scroll Down
+/* ---------------------------------------------- */
+.scroll-down {
+  border: 2px solid #FFFFFF;
+}
+.scroll-down span {
+  color: #FFFFFF;
+}
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+#preloader {
+  background: #f2f2f2;
+}
